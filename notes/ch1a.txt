@@ -1,0 +1,196 @@
+You Don't Know JavaScript
+Up And Going
+
+Chapter 1
+Intro to Programing
+
+********************************************************************************
+Statements
+
+a = b * 2;
+
+group of words, numbers, letters that are preformed to complete a specific task
+
+a = b * 2;  => statement
+
+a           => value
+b           =>  " "
+
+2           => literal value
+
+=           => opperator
+*           =>  " "
+
+
+********************************************************************************
+Expressions
+
+a = b * 2;
+
+2           => literal value expression
+b           => variable expression (retreives the current value)
+b * 2       => arithmetic expression
+a = b * 2   => assignment expression
+
+alert( a ); => call expression
+
+
+********************************************************************************
+Compiled vs Interpreted languages
+
+JavaScript is considered an interpreted language because it is interpreted and run imediatley
+  even though JavaScript is actually compiling the program on the fly
+
+
+********************************************************************************
+Output
+
+console.log( b ); => call expression
+
+.log( b )         => function (we are handing the variable 'b' to the .log function)
+
+
+********************************************************************************
+Input
+
+prompt(); function (The prompt funciton accpets gathers information for the program)
+
+age = prompt('Please input your age');
+
+console.log( age );
+
+
+********************************************************************************
+Operators
+
+*, /, +, -        => Math
+
+++                => Increment
+--                => Decrement
+
++=, -=, *=, /=    => Compound assignment
+
+==                => Loose equals
+===               => Strict equals
+!=                => Loose not-equals
+!==               => Strict not-equals
+
+>, <, >=, <=      => Comparison
+
+&&, || 		  => Logical
+
+
+********************************************************************************
+Types
+
+Built in Types
+  primitive values
+    number
+    string
+    boolean
+  literals (Included directly in the source code)
+    number
+    string (must be between ' ')
+    boolean
+
+********************************************************************************
+Converting between types
+
+String to Number / Number to String
+In JavaScript this is know as 'coercion'
+
+Number( a );    => explicit coercion
+String( a );
+
+example: In JavaScript the following is evaluated as true because "99.99" is automatically converted to 99.99
+"99.99" == 99.99
+true
+
+********************************************************************************
+Comments
+
+// Single line comments
+/* Multiple line comments
+
+********************************************************************************
+Variables
+
+Static typing vs Dynamic typing
+
+Programing languages either use Static or Dynamic typing
+Static typing   => when the variable is designated to accept a specific type (such as string or number) AKA 'type enforcment'
+Dynamic typing  => when there is no type designation and the variable accepts any type (JavaScript is Dynamic) AKA 'weak typing'
+
+********************************************************************************
+Blocks {}
+
+A series of statements set between {}
+Typically ran after control statments (such as if statements)
+Block statements do not need a ; at the end
+
+********************************************************************************
+If statements
+
+if (true or false expression) {
+  run block
+}
+else {
+  run block
+}
+
+falsey values include: '0', ''
+
+********************************************************************************
+Loops
+
+Each time a {} block statement executes this is known as an iteration.
+
+while (true false expression) {
+  run this block;
+  expression + 1;
+}
+
+vs
+
+do {
+  run this block;
+  expression + 1;
+} while (true false expression)
+
+
+example2
+
+for (var i = 0; i <= 9; i += 1) {
+    console.log( i );
+}
+
+********************************************************************************
+Functions
+
+example: non parameter funciton
+
+  function printAmount() {
+      console.log( amount.toFixed( 2 ) );
+  }
+
+  var amount = 99.99;
+
+  printAmount(); // "99.99"
+
+  amount = amount * 2;
+
+  printAmount(); // "199.98"
+
+
+example: parameter function
+
+  function format(amt) {
+  console.log(amt.toFixed( 2 ));
+  }
+
+  amount = 12.983;
+
+  format( 6.77 * amount );
+
+
+********************************************************************************
